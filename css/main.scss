@@ -80,10 +80,10 @@ header {
   width: fit-content;
   padding: 15px 40px;
   background: $theme-orange;
-  color: #000;
-  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
   text-transform: uppercase;
-  font-family: "poppins-med";
+  font-family: "poppins-bold";
 }
 .join-btn:hover {
   color: $theme-grey;
@@ -233,13 +233,13 @@ header {
           font-family: Arial, Helvetica, sans-serif;
         }
         .cards-rect-title {
-          //   font-family: "poppins-med";
           font-weight: bold;
           text-transform: capitalize;
+          display: inline;
         }
         .cards-rect-para {
-          //   font-family: "poppins-light";
           font-weight: normal;
+          display: inline;
         }
       }
     }

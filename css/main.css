@@ -95,10 +95,10 @@ header .background-video-header {
   width: fit-content;
   padding: 15px 40px;
   background: #fc9846;
-  color: #000;
-  font-size: 16px;
+  color: white;
+  font-size: 25px;
   text-transform: uppercase;
-  font-family: "poppins-med";
+  font-family: "poppins-bold";
 }
 
 .join-btn:hover {
@@ -285,10 +285,12 @@ header .background-video-header {
 .consultant .inner-div .cards-rect .cards-rect-body .cards-rect-title {
   font-weight: bold;
   text-transform: capitalize;
+  display: inline;
 }
 
 .consultant .inner-div .cards-rect .cards-rect-body .cards-rect-para {
   font-weight: normal;
+  display: inline;
 }
 
 .scrubSec {

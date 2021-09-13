@@ -221,10 +221,13 @@ header {
   }
   .title {
     text-transform: capitalize;
-    font-family: "poppins-bold";
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
   }
   .para {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
   .img-container {
     text-align: center;

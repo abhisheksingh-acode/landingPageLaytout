@@ -1,3 +1,21 @@
+const swiper = new Swiper(".case-study-slider", {
+  // Optional parameters
+  // direction: 'vertical',
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".fillBox1", {
   duration: 2,
@@ -13,7 +31,7 @@ gsap.to(".fillBox1", {
 
 gsap.to(".c1", {
   duration: 0.1,
-  backgroundColor: "rgb(252, 152, 70)",
+  backgroundColor: "rgb(47, 231, 63)",
   border: "none",
   scrollTrigger: {
     trigger: ".c1",
@@ -24,7 +42,7 @@ gsap.to(".c1", {
 });
 
 gsap.to(".c2", {
-  backgroundColor: "rgb(252, 152, 70)",
+  backgroundColor: "rgb(47, 231, 63)",
   duration: 0.1,
   border: "none",
   scrollTrigger: {
@@ -36,7 +54,7 @@ gsap.to(".c2", {
 });
 
 gsap.to(".c3", {
-  backgroundColor: "rgb(252, 152, 70)",
+  backgroundColor: "rgb(47, 231, 63)",
   duration: 0.1,
   border: "none",
   scrollTrigger: {
@@ -47,7 +65,7 @@ gsap.to(".c3", {
   },
 });
 gsap.to(".c4", {
-  backgroundColor: "rgb(252, 152, 70)",
+  backgroundColor: "rgb(47, 231, 63)",
   duration: 0.1,
   border: "none",
   scrollTrigger: {
@@ -58,7 +76,7 @@ gsap.to(".c4", {
   },
 });
 gsap.to(".c5", {
-  backgroundColor: "rgb(252, 152, 70)",
+  backgroundColor: "rgb(47, 231, 63)",
   duration: 0.1,
   border: "none",
   scrollTrigger: {

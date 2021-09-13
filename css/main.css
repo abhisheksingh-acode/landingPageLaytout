@@ -25,9 +25,19 @@
   src: url("../fonts/Poppins/Poppins-Bold.ttf");
 }
 
+@font-face {
+  font-family: "futura-bold";
+  src: url("../fonts/Futura_LT_Condensed_Bold.ttf");
+}
+
+@font-face {
+  font-family: "futura-bold";
+  src: url("../fonts/Futura_LT_Condensed_Extra_Bold.ttf");
+}
+
 header {
   width: 100%;
-  height: calc(100vh + 10px);
+  padding: 0 0 30px;
   position: relative;
   overflow: hidden;
   background-color: rgba(3, 5, 43, 0.507);
@@ -43,7 +53,6 @@ header .background-video-header {
 
 .content-landing-page {
   min-width: 300px;
-  width: 60%;
   height: 100%;
   margin: auto;
   text-align: center;
@@ -65,10 +74,15 @@ header .background-video-header {
   text-transform: capitalize;
   margin: 0;
   padding: 20px;
+  font-size: 1.7rem;
 }
 
 .content-landing-page .heading {
-  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -80,13 +94,11 @@ header .background-video-header {
 }
 
 .marked {
-  background-color: #fc9846;
   color: black;
 }
 
 .marked-alt {
-  background-color: #000;
-  color: #fc9846;
+  color: #28d436;
 }
 
 .join-btn {
@@ -94,11 +106,11 @@ header .background-video-header {
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 40px;
-  background: #fc9846;
+  background: #28d436;
   color: white;
-  font-size: 25px;
+  font-size: 28px;
   text-transform: uppercase;
-  font-family: "poppins-bold";
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
 }
 
 .join-btn:hover {
@@ -152,6 +164,10 @@ header .background-video-header {
 .why-join .title {
   color: #fff;
   padding: 70px 0;
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
 }
 
 .why-join .cards-rect {
@@ -174,7 +190,7 @@ header .background-video-header {
 
 .why-join .cards-rect i {
   margin-left: 10px;
-  background: #fc9846;
+  background: #28d436;
   border-radius: 50%;
   font-size: 28px;
 }
@@ -191,10 +207,32 @@ header .background-video-header {
 .why-join .cards-rect .cards-rect-body .cards-rect-title {
   font-weight: bold;
   text-transform: capitalize;
+  display: inline;
 }
 
 .why-join .cards-rect .cards-rect-body .cards-rect-para {
   font-weight: normal;
+  display: inline;
+}
+
+.ebook .title {
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
+}
+
+.ebook .row img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.linkedin .title {
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
 }
 
 .flex-section {
@@ -234,11 +272,102 @@ header .background-video-header {
   max-height: 350px;
 }
 
+.case-studies .title {
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
+}
+
+.case-studies .case-study-slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  padding: 40px 0;
+}
+
+.case-studies .case-study-slider .row .lt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-studies .case-study-slider .row .lt img {
+  width: auto;
+  max-height: 400px;
+  height: 70%;
+}
+
+.case-studies .case-study-slider .row .rt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.case-studies .case-study-slider .row .rt .top .nos {
+  color: #28d436;
+  font-size: 20px;
+}
+
+.case-studies .case-study-slider .row .rt .top .profile-name {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.case-studies .case-study-slider .row .rt .top .about {
+  font-size: 1.1rem;
+}
+
+.case-studies .case-study-slider .row .rt .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 70%;
+}
+
+.case-studies .case-study-slider .row .rt .icons img {
+  width: auto;
+  height: 80px;
+}
+
+.case-studies .case-study-slider .row .rt .visit-button {
+  padding: 15px 25px;
+  color: #fff;
+  background-color: #28d436;
+  border-radius: 30px;
+}
+
 .consultant {
   padding: 40px;
   background: rgba(0, 0, 0, 0.616) url("https://images.unsplash.com/photo-1517971129774-8a2b38fa128e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
   background-size: cover;
   background-blend-mode: multiply;
+}
+
+.consultant .title {
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
 }
 
 .consultant .inner-div {
@@ -251,7 +380,9 @@ header .background-video-header {
 
 .consultant .inner-div .cards-rect {
   width: 100%;
-  height: 130px;
+  min-height: 80px;
+  -webkit-box-shadow: 1px 0 6px rgba(0, 0, 0, 0.178);
+          box-shadow: 1px 0 6px rgba(0, 0, 0, 0.178);
   background: #fff;
   border-radius: 5px;
   margin: 14px auto;
@@ -268,7 +399,7 @@ header .background-video-header {
 
 .consultant .inner-div .cards-rect i {
   margin-left: 10px;
-  background: #fc9846;
+  background: #28d436;
   border-radius: 50%;
   font-size: 28px;
 }
@@ -285,12 +416,10 @@ header .background-video-header {
 .consultant .inner-div .cards-rect .cards-rect-body .cards-rect-title {
   font-weight: bold;
   text-transform: capitalize;
-  display: inline;
 }
 
 .consultant .inner-div .cards-rect .cards-rect-body .cards-rect-para {
   font-weight: normal;
-  display: inline;
 }
 
 .scrubSec {
@@ -326,13 +455,13 @@ header .background-video-header {
 .fillBox1 {
   width: px;
   height: 2px;
-  background-color: #fc9846;
+  background-color: #28d436;
 }
 
 .appear > p {
   width: 200px;
   opacity: 1;
-  background-color: #fc9846;
+  background-color: #28d436;
   padding: 25px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 30px -10px black;
@@ -377,7 +506,7 @@ header .background-video-header {
   position: absolute;
   top: 42%;
   opacity: 1;
-  background-color: #fc9846;
+  background-color: #28d436;
   padding: 25px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 30px -10px black;
@@ -440,6 +569,13 @@ header .background-video-header {
   padding: 60px 0;
 }
 
+.reviews .title {
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
+}
+
 .video-testimony {
   padding: 50px 0;
 }
@@ -447,5 +583,12 @@ header .background-video-header {
 .video-testimony iframe {
   margin-bottom: 20px;
   height: 260px;
+}
+
+.video-testimony .title {
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  line-height: 1;
 }
 /*# sourceMappingURL=main.css.map */

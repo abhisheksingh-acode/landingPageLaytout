@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-$theme-orange: rgb(252, 152, 70);
+// $theme-orange: rgb(252, 152, 70);
+$theme-orange: rgb(40, 212, 54);
 $theme-grey: rgb(82, 82, 82);
 
 @font-face {
@@ -23,10 +24,19 @@ $theme-grey: rgb(82, 82, 82);
   font-family: "poppins-bold";
   src: url("../fonts/Poppins/Poppins-Bold.ttf");
 }
+@font-face {
+  font-family: "futura-bold";
+  src: url("../fonts/Futura_LT_Condensed_Bold.ttf");
+}
+@font-face {
+  font-family: "futura-bold";
+  src: url("../fonts/Futura_LT_Condensed_Extra_Bold.ttf");
+}
 
 header {
   width: 100%;
-  height: calc(100vh + 10px);
+  // height: calc(100vh + 10px);
+  padding: 0 0 30px;
   position: relative;
   overflow: hidden;
   background-color: rgba(3, 5, 43, 0.507);
@@ -42,7 +52,7 @@ header {
 
 .content-landing-page {
   min-width: 300px;
-  width: 60%;
+  // width: ;
   height: 100%;
   margin: auto;
   text-align: center;
@@ -56,9 +66,14 @@ header {
     text-transform: capitalize;
     margin: 0;
     padding: 20px;
+    font-size: 1.7rem;
   }
   .heading {
-    font-family: "poppins-bold", Arial, Helvetica, sans-serif;
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
+    text-transform: uppercase;
     margin: 0;
   }
 }
@@ -69,11 +84,11 @@ header {
 }
 
 .marked {
-  background-color: $theme-orange;
+  // background-color: $theme-orange;
   color: black;
 }
 .marked-alt {
-  background-color: #000;
+  // background-color: #000;
   color: $theme-orange;
 }
 .join-btn {
@@ -81,9 +96,10 @@ header {
   padding: 15px 40px;
   background: $theme-orange;
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 28px;
   text-transform: uppercase;
-  font-family: "poppins-bold";
+  font-family: "futura-bold", Arial, Helvetica, sans-serif;
+  // letter-spacing: em;
 }
 .join-btn:hover {
   color: $theme-grey;
@@ -129,6 +145,10 @@ header {
   .title {
     color: #fff;
     padding: 70px 0;
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
   }
 
   .cards-rect {
@@ -159,15 +179,41 @@ header {
         //   font-family: "poppins-med";
         font-weight: bold;
         text-transform: capitalize;
+        display: inline;
       }
       .cards-rect-para {
         //   font-family: "poppins-light";
         font-weight: normal;
+        display: inline;
       }
     }
   }
 }
 
+.ebook {
+  .title {
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
+  }
+  .row {
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+}
+
+.linkedin {
+  .title {
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
+  }
+}
 .flex-section {
   padding: 60px 20px;
   .row {
@@ -194,12 +240,83 @@ header {
   }
 }
 
+.case-studies {
+  .title {
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
+  }
+  .case-study-slider {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    padding: 40px 0;
+    .row {
+      .lt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: auto;
+          max-height: 400px;
+          height: 70%;
+        }
+      }
+      .rt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .top {
+          .nos {
+            // font-weight: bold;
+            color: $theme-orange;
+            font-size: 20px;
+          }
+          .profile-name {
+            font-weight: bold;
+            font-size: 2.5rem;
+          }
+          .about {
+            font-size: 1.1rem;
+          }
+        }
+        .icons {
+          display: flex;
+          justify-content: space-between;
+          min-width: 70%;
+          img {
+            width: auto;
+            height: 80px;
+            // margin: 0 10px;
+          }
+        }
+        .visit-button {
+          padding: 15px 25px;
+          color: #fff;
+          background-color: $theme-orange;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
 .consultant {
   padding: 40px;
   background: rgba(0, 0, 0, 0.616)
     url("https://images.unsplash.com/photo-1517971129774-8a2b38fa128e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
   background-size: cover;
   background-blend-mode: multiply;
+
+  .title {
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
+  }
 
   .inner-div {
     width: 55%;
@@ -210,7 +327,10 @@ header {
 
     .cards-rect {
       width: 100%;
-      height: 130px;
+      min-height: 80px;
+      // border: 1px solid rgba(0, 0, 0, 0.199);
+      box-shadow: 1px 0 6px rgba(0, 0, 0, 0.178);
+      // height: fit-content;
       background: #fff;
       border-radius: 5px;
       margin: 14px auto;
@@ -235,11 +355,9 @@ header {
         .cards-rect-title {
           font-weight: bold;
           text-transform: capitalize;
-          display: inline;
         }
         .cards-rect-para {
           font-weight: normal;
-          display: inline;
         }
       }
     }
@@ -374,6 +492,12 @@ header {
 
 .reviews {
   padding: 60px 0;
+  .title {
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
+  }
 }
 
 .video-testimony {
@@ -382,5 +506,11 @@ header {
   iframe {
     margin-bottom: 20px;
     height: 260px;
+  }
+  .title {
+    font-family: "futura-bold", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1;
   }
 }
